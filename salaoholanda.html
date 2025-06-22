@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAO PROFISSIONAL HOLANDA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 60px;
+            background-color: #f5f5f5;
+        }
+
+        .menu {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: color 0.3s;
+            padding: 50px;
+            box-shadow: #eddcdc 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            color: #ccc;
+        }
+
+        .whatssap {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            vertical-align: middle;
+            border-radius: 50px;
+        }
+
+        .descricao {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+            font-weight: bold;
+            border: 10px solid white;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+       
+
+       
+
+        .Homens,
+        .Mulheres,
+        .Crianças,
+        .Unhas,
+        .Maquiagem {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+           
+        }
+
+        .Homens img,
+        .Mulheres img,
+        .Crianças img,
+        .Unhas img,
+        .Maquiagem img {
+            width: 100%;
+            height: 350px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+            width: 300px;
+        }
+
+        .Homens img:hover,
+        .Mulheres img:hover,
+        .Crianças img:hover,
+        .Unhas img:hover,
+        .Maquiagem img:hover {
+            transform: scale(1.05);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal img {
+            display: block;
+            margin: 10% auto;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .Maquiagem{
+            color: green;
+            display: flex;
+            flex-direction: row;
+        }
+        .gps{
+            width: 90px;
+            height: 40px;
+            margin-left: 20px;
+            border-radius: 50px;
+        }
+
+        @media (max-width: 768px) {
+
+            .Homens,
+            .Mulheres,
+            .Crianças,
+            .Unhas,
+            .Maquiagem {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="#" onclick="showGallery('Homens')">Homens</a>
+        <a href="#" onclick="showGallery('Mulheres')">Mulheres</a>
+        <a href="#" onclick="showGallery('Crianças')">Crianças</a>
+        <a href="#" onclick="showGallery('Unhas')">Unhas</a>
+        <a href="#" onclick="showGallery('Maquiagem')">Informaçoes</a>
+        <a href="https://wa.me/+245955465931"><img class="whatssap" src="imagens/whatssap3.gif" alt="WhatsApp"></a>
+    </nav>
+
+    <h1 class="descricao">SALAO PROFISSIONAL HOLANDA</h1>
+
+
+
+    <div class="Homens" id="Homens">
+        <!-- Imagens do Homens -->
+        <img src="imagens/coerte de cabelo1.jpg" alt="">
+        <img src="imagens/corte de cabelo2.jpg" alt="">
+        <img src="imagens/corte de cabelo3.jpg" alt="">
+        <img src="imagens/corte de cabelo4.jpg" alt="">
+        <img src="imagens/corte de cabelo5.jpg" alt="">
+        <img src="imagens/corte de cabelo6.jpg" alt="">
+        <img src="imagens/corte de cabelo7.jpg" alt="">
+        <img src="imagens/corte de cabelo8.jpg" alt="">
+        <img src="imagens/corte de cabelo9.jpg" alt="">
+        <img src="imagens/homens10.jpg" alt="">
+        <img src="imagens/homens11.jpg" alt="">
+        <img src="imagens/homens13.jpg" alt="">
+        <img src="imagens/homens14.jpg" alt="">
+        <img src="imagens/homens15.jpg" alt="">
+        <img src="imagens/homens16.jpg" alt="">
+        <img src="imagens/homens17.jpg" alt="">
+        <img src="imagens/homens17.jpg" alt="">
+        <img src="imagens/homens18.jpg" alt="">
+        <img src="imagens/homens19.jpg" alt="">
+        <img src="imagens/homens20.jpg" alt="">
+        <img src="imagens/homens21.jpg" alt="">
+        <img src="imagens/homens22.jpg" alt="">
+        <img src="imagens/homens23.jpg" alt="">
+        <img src="imagens/homens24.jpg" alt="">
+      
+    </div>
+
+    <div class="Mulheres" id="Mulheres" style="display: none;">
+        <!-- Imagens das Mulheres -->
+        <img src="imagens/femia1.jpg" alt="">
+        <img src="imagens/femia2.jpg" alt="">
+        <img src="imagens/femia3.jpg" alt="">
+        <img src="imagens/femia4.jpg" alt="">
+        <img src="imagens/femia5.jpg" alt="">
+        <img src="imagens/femia6.jpg" alt="">
+        <img src="imagens/femia12.jpg" alt="">
+        <img src="imagens/femia7.jpg" alt="">
+        <img src="imagens/femia13.jpg" alt="">
+        <img src="imagens/femia14.jpg" alt="">
+        <img src="imagens/femia15.jpg" alt="">
+        <img src="imagens/femia16.jpg" alt="">
+        <img src="imagens/femia17.jpg" alt="">
+        <img src="imagens/femia18.jpg" alt="">
+        <img src="imagens/femia19.jpg" alt="">
+        <img src="imagens/femia20.jpg" alt="">
+        <img src="imagens/femia21.jpg" alt="">
+        <img src="imagens/femia22.jpg" alt="">
+        <img src="imagens/femia23.jpg" alt="">
+        <img src="imagens/femia24.jpg" alt="">
+        <img src="imagens/femia25.jpg" alt="">
+        <img src="imagens/femia26.jpg" alt="">
+        <img src="imagens/femia27.jpg" alt="">
+        <img src="imagens/femia28.jpg" alt="">
+        <img src="imagens/femia29.jpg" alt="">
+        <img src="imagens/femia30.jpg" alt="">
+        <img src="imagens/femia31.jpg" alt="">
+        <img src="imagens/femia32.jpg" alt="">
+        <img src="imagens/femia33.jpg" alt="">
+        <img src="imagens/femia34.jpg" alt="">
+        <img src="imagens/femia35.jpg" alt="">
+        <img src="imagens/femia36.jpg" alt="">
+       
+    </div>
+
+    <div class="Crianças" id="Crianças" style="display: none;">
+        <!-- Imagens das Crianças -->
+        <img src="imagens/crianca1.png" alt="">
+        <img src="imagens/crianca3.png" alt="">
+        <img src="imagens/crianca4.jpg" alt="">
+        <img src="imagens/crianca5.jpg" alt="">
+        <img src="imagens/crianca6.jpg" alt="">
+        <img src="imagens/crianca7.jpg" alt="">
+        <img src="imagens/crianca8.jpg" alt="">
+        <img src="imagens/crianca9.jpg" alt="">
+        <img src="imagens/crianca1.png" alt="">
+        <img src="imagens/crianca1.png" alt="">
+        <img src="imagens/crianca1.png" alt="">
+    </div>
+
+    <div class="Unhas" id="Unhas" style="display: none;">
+        <!-- Imagens das Unhas -->
+        <img src="imagens/unhas1.jpg" alt="">
+        <img src="imagens/unhas2.jpg" alt="">
+        <img src="imagens/unhas3.jpg" alt="">
+        <img src="imagens/unhas4.jpg" alt="">
+        <img src="imagens/unhas5.jpg" alt="">
+        <img src="imagens/unhas6.jpg" alt="">
+        <img src="imagens/unhas7.jpg" alt="">
+        <img src="imagens/unhas8.jpg" alt="">
+        <img src="imagens/unhas9.jpg" alt="">
+        <img src="imagens/unhas10.jpg" alt="">
+    </div>
+
+    <div class="Maquiagem" id="Maquiagem" style="display: none;">
+        <!-- iformaçoes -->
+         <p>salao fica situado na entrada djolo 60m de estrada depois de oficina do moto </p>
+         <p class="aberto">Aberto 8:00 </p>
+         <p class="fechar">Fecha 22:00 </p>
+         <p>clique no WhatsApp para nos contatar </p>
+         <img class="gps" src="imagens/localizacao.jpg" alt="">
+         
+        
+        
+    </div>
+
+    <div class="modal">
+        <img src="" alt="">
+    </div>
+
+    <script>
+        // Função para exibir a galeria selecionada
+        function showGallery(category) {
+            // Oculta todas as galerias
+            document.querySelectorAll('.Homens, .Mulheres, .Crianças, .Unhas, .Maquiagem').forEach(gallery => {
+                gallery.style.display = 'none';
+            });
+
+            // Exibe a galeria selecionada
+            document.getElementById(category).style.display = 'grid';
+        }
+
+        // Adiciona evento de clique para cada imagem
+        document.querySelectorAll('.Homens img, .Mulheres img, .Crianças img, .Unhas img, .Maquiagem img').forEach(img => {
+            img.addEventListener('click', () => {
+                // Exibe a imagem em tela cheia
+                const modal = document.querySelector('.modal');
+                modal.style.display = 'block';
+                modal.querySelector('img').src = img.src;
+
+                // Adiciona evento de clique para fechar o modal
+                modal.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
